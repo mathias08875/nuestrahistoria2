@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuestra Historia ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(180deg,#070707,#111,#1c1c1c);
+color:white;
+overflow-x:hidden;
+}
+
+/* PORTADA */
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.85)),
+url('foto-portada.jpg') center/cover;
+}
+
+header h1{
+font-family:'Playfair Display',serif;
+font-size:5rem;
+text-shadow:0 0 25px rgba(255,255,255,.3);
+}
+
+header p{
+margin-top:15px;
+opacity:.9;
+max-width:700px;
+font-size:1.3rem;
+}
+
+/* BOTÓN */
+.btn{
+margin-top:30px;
+padding:15px 35px;
+border:none;
+border-radius:40px;
+font-weight:600;
+cursor:pointer;
+background:white;
+color:black;
+transition:.3s;
+font-size:1rem;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* HISTORIA */
+.timeline{
+max-width:1100px;
+margin:auto;
+padding:80px 20px;
+}
+
+.chapter{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+margin:110px 0;
+opacity:0;
+transform:translateY(60px);
+transition:1s;
+}
+
+.chapter.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.photo img{
+width:100%;
+height:450px;
+object-fit:cover;
+border-radius:22px;
+box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+/* TEXTO MÁS GRANDE */
+h2{
+font-family:'Playfair Display',serif;
+font-size:3.2rem;
+margin-bottom:15px;
+}
+
+p{
+font-size:1.25rem;
+line-height:1.9;
+opacity:.95;
+}
+
+/* FINAL */
+.final{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+url('foto-final.jpg') center/cover;
+}
+
+.final h2{
+font-size:5rem;
+font-family:'Playfair Display',serif;
+text-shadow:0 0 30px rgba(255,255,255,.3);
+}
+
+.final p{
+max-width:850px;
+margin-top:20px;
+font-size:1.3rem;
+line-height:1.9;
+}
+
+/* LLUVIA DE ANILLOS */
+.rain-container{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+z-index:999;
+}
+
+.ring{
+position:absolute;
+font-size:26px;
+animation:fall linear forwards;
+opacity:0.9;
+filter:drop-shadow(0 0 6px rgba(255,255,255,.3));
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh) rotate(360deg);
+opacity:0;
+}
+}
+
+/* RESPONSIVE */
+@media(max-width:850px){
+header h1{
+font-size:3.5rem;
+}
+.chapter{
+grid-template-columns:1fr;
+}
+.photo img{
+height:320px;
+}
+h2{
+font-size:2.4rem;
+}
+.final h2{
+font-size:3rem;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Nuestra Historia ❤️</h1>
+<p>Un pequeño viaje por todo lo que vivimos juntos...</p>
+<button class="btn" onclick="start()">Comenzar ✨</button>
+</header>
+
+<section class="timeline">
+
+<div class="chapter">
+<div class="photo"><img src="imagenes/IMG-20230427-WA0042.jpg"></div>
+<div>
+<h2>El día que te vi por primera ves</h2>
+<p>Pfff, como siempre digo, como olvidar ese dia.</p>
+<p>Era marzo del 2022, empezaban las clases, desde el primer momento en que te vi dije que que hermosa era esa chica, ni te veia bien del tapabocas pero no me equivoque de que eras bellisima. Me enamore desde el primer segundo en que te vi❤️</p>
+</div>
+</div>
+
+<div class="chapter">
+<div class="photo"><img src="imagenes/IMG-20230427-WA0037.jpg"></div>
+<div>
+<h2>Cuando empezamos a hablar</h2>
+<p>Un adelanto, HOLA, HOLA, HOLA 🤣
+    <P>Un dia entre oliver, pablo y eso me obligaron a hablarte, no porque no queria sino porque era timido y estaba reeee nervioso.</P>
+    <p>Vos estabas sentada enfrente del curso y me fui obligamaente a hablarte, te dije mil veces hola JAJAJAJA, noooo vos te estabas muriendo de risa ahi. Pero fue una de las cosas que nunca me voy a arrepentir porque desde ahi comenzo nuestra historia</p>
+</p>
+</div>
+</div>
+
+<div class="chapter">
+<div class="photo"><img src="imagenes/IMG-20230427-WA0039.jpg"></div>
+<div>
+<h2>Me enamoré mas de vos</h2>
+<p>A partir de ese momento empezamos a hablar mas, a acercarnos mas y la cosa fue fluyendo </p>
+<p>Menos de un mes despues de pedi que seas mi novia, ese dia estaba tannnn nervioso porque no sabia que me ibas a decir yyyy la respuesta fue si, desde ahi comenzamos a llenarnos de amor, aprendimos a querernos respetarnos y conocernos mas, siempre estuvimos el uno para el otro sin importar la situacion en que estabamos y lo que mas me enamoro de vos fue que nunca te diste por vencida, que siempre luchaste por salir adelante y ahi me di cuenta que sos una mujer increible y maravillosa💖 </p>
+</div>
+</div>
+
+<div class="chapter">
+<div class="photo"><img src="imagenes/9.jpg"></div>
+<div>
+<h2>Hoy en dia</h2>
+<p>Aunque estos ultimos tiempos las cosas entre nosotros cambio mucho, en el sentido demostrarnos amor, en como decimos las cosas, el amor y cariño que tengo por vos siguen intactos, te sigo amando como el primer dia y aunque a veces querramos dejar todo tirado la verdad es que nose como voy a vivir sin vos, porque te volviste parte de mi dia a dia, te volviste parte de mi y de verdad deseo que las cosas entre los dos mejoren porque de verdad quiero que seas vos, quiero que seas mi esposa y futura mama de mis hijos💕</p>
+</div>
+</div>
+
+</section>
+
+<section class="final">
+<h2>Feliz Cumpleaños mi niña ❤️</h2>
+<p>
+Gracias por existir, por darme un espacio en tu corazon y por hacerme tan feliz
+</p>
+<P>Espero que te haya gustado este pequeño regalo y no te olvides...</P>
+<p>Nuestra historia sigue y seguira creciendo.</p>
+
+<button class="btn" onclick="startRain()">Toca aquí ✨</button>
+</section>
+
+<div class="rain-container" id="rain"></div>
+
+<script>
+
+/* ANIMACIÓN SCROLL */
+const chapters=document.querySelectorAll('.chapter');
+
+window.addEventListener('scroll',()=>{
+chapters.forEach(c=>{
+if(c.getBoundingClientRect().top < window.innerHeight-120){
+c.classList.add('show');
+}
+});
+});
+
+/* LLUVIA DE ANILLOS */
+function startRain(){
+for(let i=0;i<70;i++){
+let ring=document.createElement("div");
+ring.className="ring";
+ring.innerHTML="💍";
+ring.style.left=Math.random()*100+"vw";
+ring.style.top="-40px";
+ring.style.fontSize=(18+Math.random()*20)+"px";
+ring.style.animationDuration=(3+Math.random()*4)+"s";
+
+document.getElementById("rain").appendChild(ring);
+
+setTimeout(()=>ring.remove(),8000);
+}
+}
+
+/* START HISTORIA */
+function start(){
+document.querySelector('.timeline').scrollIntoView({behavior:'smooth'});
+}
+
+</script>
+
+</body>
+</html>
